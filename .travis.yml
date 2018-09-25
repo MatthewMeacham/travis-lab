@@ -1,5 +1,8 @@
 language: python
 python:
     - "2.7"
+install:
+    - conda install pytest
 script:
     - python hello.py
+    - py.test -v -rs myFunctionsTest.py
